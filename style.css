@@ -1,0 +1,27 @@
+/* #body{
+ background-image: ;
+} */
+
+#viewchange{
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  justify-content: end;
+  width: 1400px;
+}
+#viewchange :hover{
+  background-color: white;
+}
+#ButtonTable, #ButtonLine, #ButtonBar{
+    padding: 15px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+
+#lineChart{
+    margin: auto;
+    width: 700px;
+    height: 500px;
+}
