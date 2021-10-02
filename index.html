@@ -1,24 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TablePresentation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
-<body id="body">
-    <div id="viewchange">
-        <div id="ButtonTable"> Table Data</div>
-        <div id="ButtonLine"> Line Chart</div>
-        <div id="ButtonBar"> Bar Chart </div>
+<body>
+    <div class="buttonbox">
+        <button class="Tablechart"> Table chart</button>
+        <button class="linechart" onclick="changechart('line')"> line chart</button>
+        <button class="barchart" onclick="changechart('bar')"> bar chart</button>
     </div>
-    <canvas id="lineChart"></canvas>
-    <!-- <canvas id="BarChart"></canvas> -->
+    <div class="chatholder">
+        <div class="chartBox">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    
 </body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="app.js"></script>
-<script src="chart.js"></script>
 </html>
