@@ -1,3 +1,6 @@
+var chartBox = document.getElementById("chartBox");
+var Table = document.getElementById("table");
+
 const data = {
     labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     datasets: [{
@@ -43,6 +46,13 @@ const myChart = new Chart(
 );
 
 function changechart(charttype){
+    chartBox.style.visibility ="visible";
+    Table.style.visibility ="hidden";
      myChart.config.type = charttype;
      myChart.update();
+}
+
+function viewchange(){
+    chartBox.style.visibility ="hidden";
+    Table.style.visibility ="visible";
 }

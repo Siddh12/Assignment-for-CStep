@@ -9,14 +9,66 @@
 
 <body>
     <div class="buttonbox">
-        <button class="Tablechart"> Table chart</button>
+        <button class="Tablechart" onclick="viewchange()"> Table chart</button>
         <button class="linechart" onclick="changechart('line')"> line chart</button>
         <button class="barchart" onclick="changechart('bar')"> bar chart</button>
     </div>
     <div class="chatholder">
-        <div class="chartBox">
+        <div class="chartBox" id="chartBox">
             <canvas id="myChart"></canvas>
         </div>
+        <table id="table">
+            <tr>
+                <th>City / Year</th>
+                <th>2015</th>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+                <th>2019</th>
+                <th>2020</th>
+                <th>2021</th>
+            </tr>
+            <tr>
+                <th>Pune</th>
+                <th>21,000/-</th>
+                <th>24,000/-</th>
+                <th>25,000/-</th>
+                <th>27,000/-</th>
+                <th>23,000/-</th>
+                <th>21,000/-</th>
+                <th>27,000/-</th>
+            </tr>
+            <tr>
+                <th>Bangalore</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+            </tr>
+            <tr>
+                <th>Chennai</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+            </tr>
+            <tr>
+                <th>Hyderabad</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+                <th>25,000/-</th>
+            </tr>
+        </table>
     </div>
     
 </body>
